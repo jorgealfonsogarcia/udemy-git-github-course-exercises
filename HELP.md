@@ -28,3 +28,7 @@ git add .
 ```
 git commit -m "The commit message."
 ```
+# Reverse All Changes
+```
+git checkout -- .
+```
