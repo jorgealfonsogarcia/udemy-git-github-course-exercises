@@ -12,6 +12,14 @@ git help
 git config --global user.name "John Doe"
 git config --global user.email "john.doe@example.com"
 ```
+## Edit All Global Configuration
+```
+git config --global -e
+```
+## List All Global Configuration
+```
+git config --global -l
+```
 # Init Repository
 ```
 git init
@@ -64,3 +72,14 @@ git log --oneline
 ```
 git log --oneline --decorate --all --graph
 ```
+# Create an Command Alias
+```
+git config --global alias.alias-name "git-command option-1 option-2 option-n"
+```
+* ## Examples
+    ```
+    git config --global alias.lg "log --oneline --decorate --all --graph"
+    ```
+    ```
+    git config --global alias.sb "status -sb"
+    ```
