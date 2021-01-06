@@ -20,6 +20,10 @@ git init
 ```
 git status
 ```
+# Simplify Repository Status
+```
+git status -sb
+```
 # Add All Files
 ```
 git add .
@@ -32,6 +36,10 @@ git add -A
 ```
 git add <file>
 ```
+# Unstage Added Files
+```
+git reset <file>
+```
 # Commit
 ```
 git commit -m "The commit message."
@@ -40,11 +48,19 @@ git commit -m "The commit message."
 ```
 git checkout -- .
 ```
+# Reverse File Changes 
+```
+git checkout -- <file>
+```
 # Log
 ```
 git log
 ```
-# Unstage Added Files
+# Log in One Line
 ```
-git reset <file>
+git log --oneline
+```
+# Log With All Detail
+```
+git log --oneline --decorate --all --graph
 ```
