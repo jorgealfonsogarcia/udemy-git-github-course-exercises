@@ -24,6 +24,10 @@ git status
 ```
 git add .
 ```
+# Add Files
+```
+git add <file>
+```
 # Commit
 ```
 git commit -m "The commit message."
