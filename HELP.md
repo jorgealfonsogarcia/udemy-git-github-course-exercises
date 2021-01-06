@@ -24,6 +24,10 @@ git status
 ```
 git add .
 ```
+# Add Modified Files
+```
+git add -A
+```
 # Add Files
 ```
 git add <file>
@@ -35,4 +39,12 @@ git commit -m "The commit message."
 # Reverse All Changes
 ```
 git checkout -- .
+```
+# Log
+```
+git log
+```
+# Unstage Added Files
+```
+git reset <file>
 ```
