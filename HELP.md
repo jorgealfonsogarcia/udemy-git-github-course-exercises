@@ -131,3 +131,11 @@ git mv <old-filename> <new-filename>
     ```bash
     git mv demo-04-heroes/destroy-world.txt demo-04-heroes/save-world.txt
     ```
+## Delete File
+```bash    
+git rm <file>
+```
+* ### Example
+    ```bash
+    git rm demo-04-heroes/save-world.txt
+    ```
