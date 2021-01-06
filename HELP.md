@@ -20,66 +20,78 @@ git config --global -e
 ```
 git config --global -l
 ```
-# Init Repository
+## Init Repository
 ```
 git init
 ```
-# Repository Status
+## Repository Status
 ```
 git status
 ```
-# Simplify Repository Status
+## Simplify Repository Status
 ```
 git status -sb
 ```
-# Add All Files
+## Add All Files
 ```
 git add .
 ```
-# Add Modified Files
+## Add All Modified Files
 ```
 git add -A
 ```
-# Add Files
+## Add Files
 ```
 git add <file>
 ```
-# Unstage Added Files
+## Unstage Added Files
 ```
 git reset <file>
 ```
-# Commit
+## Commit
 ```
 git commit -m "The commit message."
 ```
-# Reverse All Changes
+## Add All Modified Files and Commit
+```
+git commit -am "The commit message."
+```
+## Reverse All Changes
 ```
 git checkout -- .
 ```
-# Reverse File Changes 
+## Reverse File Changes 
 ```
 git checkout -- <file>
 ```
-# Log
+## Log
 ```
 git log
 ```
-# Log in One Line
+## Log in One Line
 ```
 git log --oneline
 ```
-# Log With All Detail
+## Log With All Detail
 ```
 git log --oneline --decorate --all --graph
 ```
-# Create an Command Alias
+## Create an Command Alias
 ```
 git config --global alias.alias-name "git-command option-1 option-2 option-n"
 ```
-* ## Examples
+* ### Examples
     ```
     git config --global alias.lg "log --oneline --decorate --all --graph"
     ```
     ```
     git config --global alias.sb "status -sb"
     ```
+## Get the Difference Between the Current Files Unstaged and the Last Commit
+```
+git diff
+```
+## Get the Difference Between the Staged Files and the Last Commit
+```
+git diff --staged
+```
