@@ -123,3 +123,11 @@ git reset --hard <COMMIT-HASH>
 ```bash    
 git reflog
 ```
+## Change File Name
+```bash    
+git mv <old-filename> <new-filename>
+```
+* ### Example
+    ```bash
+    git mv demo-04-heroes/destroy-world.txt demo-04-heroes/save-world.txt
+    ```
