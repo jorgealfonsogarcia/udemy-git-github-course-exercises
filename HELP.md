@@ -56,6 +56,10 @@ git commit -m "The commit message."
 ```
 git commit -am "The commit message."
 ```
+## Amend Last Commit Message
+```
+git commit --amend -m "The new commit message."
+```
 ## Reverse All Changes
 ```
 git checkout -- .
@@ -94,4 +98,8 @@ git diff
 ## Get the Difference Between the Staged Files and the Last Commit
 ```
 git diff --staged
+```
+## Reset Soft Last Commit
+```
+git reset --soft HEAD^
 ```
