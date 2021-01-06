@@ -139,3 +139,8 @@ git rm <file>
     ```bash
     git rm demo-04-heroes/save-world.txt
     ```
+## Update Renamed Files When It's Applied Outside Git
+```bash    
+git add -u
+git add -A
+```
