@@ -119,3 +119,7 @@ git reset --hard <COMMIT-HASH>
     ```bash
     git reset --hard 63c9c99
     ```
+## Reference Log (Shows All Repository History)
+```bash    
+git reflog
+```
