@@ -172,3 +172,11 @@ git diff <branch-1-name> <branch-2-name>
     ```bash
     git diff my-new-branch master
     ```
+## Merge a Branch into the Current Branch
+```bash
+git merge <branch-name>
+```
+* ### Example
+    ```bash
+    git merge my-new-branch
+    ```
