@@ -164,3 +164,11 @@ git checkout <branch-name>
 ```bash
 git branch
 ```
+## Get the Difference Between Branches
+```bash
+git diff <branch-1-name> <branch-2-name>
+```
+* ### Example
+    ```bash
+    git diff my-new-branch master
+    ```
