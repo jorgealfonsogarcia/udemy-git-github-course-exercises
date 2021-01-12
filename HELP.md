@@ -196,3 +196,47 @@ git checkout -b <new-branch-name>
     ```bash
     git checkout -b my-new-branch
     ```
+## Create a Tag to the Current Commit
+```bash
+git tag <tag-name>
+```
+* ### Example
+    ```bash
+    git tag v1.0.0
+    ```
+## List Tags
+```bash
+git tag
+```
+## Delete a Tag
+```bash
+git tag -d <tag-name>
+```
+* ### Example
+    ```bash
+    git tag -d v1.0.0
+    ```
+## Create an Annotated Tag to the Current Commit
+```bash
+git tag -a <tag-name> -m "Message"
+```
+* ### Example
+    ```bash
+    git tag -a 1.0.0 -m "Version 1.0.0"
+    ```
+## Create an Annotated Tag to a Specific Commit
+```bash
+git tag -a <tag-name> <COMMIT-HASH> -m "Message"
+```
+* ### Example
+    ```bash
+    git tag -a 0.1.0 1989054 -m "Alpha Version."
+    ```
+## Show Tag Info
+```bash
+git show <tag-name>
+```
+* ### Example
+    ```bash
+    git show 0.1.0
+    ```
