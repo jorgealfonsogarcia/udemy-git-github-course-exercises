@@ -140,7 +140,27 @@ git rm <file>
     git rm demo-04-heroes/save-world.txt
     ```
 ## Update Renamed (Or Deleted) Files When It's Applied Outside Git
-```bash    
+```bash
 git add -u
 git add -A
+```
+## Create a New Branch
+```bash
+git branch <new-branch-name>
+```
+* ### Example
+    ```bash
+    git branch my-new-branch
+    ```
+## Change Branch
+```bash
+git checkout <branch-name>
+```
+* ### Example
+    ```bash
+    git checkout my-new-branch
+    ```
+## List Branches
+```bash
+git branch
 ```
