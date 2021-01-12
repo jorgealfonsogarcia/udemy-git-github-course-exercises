@@ -120,11 +120,11 @@ git reset --hard <COMMIT-HASH>
     git reset --hard 63c9c99
     ```
 ## Reference Log (Shows All Repository History)
-```bash    
+```bash
 git reflog
 ```
 ## Change File Name
-```bash    
+```bash
 git mv <old-filename> <new-filename>
 ```
 * ### Example
@@ -132,7 +132,7 @@ git mv <old-filename> <new-filename>
     git mv demo-04-heroes/destroy-world.txt demo-04-heroes/save-world.txt
     ```
 ## Delete File
-```bash    
+```bash
 git rm <file>
 ```
 * ### Example
@@ -187,4 +187,12 @@ git branch -d <branch-name>
 * ### Example
     ```bash
     git branch -d my-new-branch
+    ```
+## Create and Change to a New Branch
+```bash
+git checkout -b <new-branch-name>
+```
+* ### Example
+    ```bash
+    git checkout -b my-new-branch
     ```
