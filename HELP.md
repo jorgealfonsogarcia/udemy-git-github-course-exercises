@@ -180,3 +180,11 @@ git merge <branch-name>
     ```bash
     git merge my-new-branch
     ```
+## Delete a Branch
+```bash
+git branch -d <branch-name>
+```
+* ### Example
+    ```bash
+    git branch -d my-new-branch
+    ```
