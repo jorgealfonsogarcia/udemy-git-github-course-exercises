@@ -244,9 +244,21 @@ git show <tag-name>
 ```sh
 git stash
 ```
+## Stash with a Message
+```sh
+git stash save "<message>"
+```
+* ### Example
+    ```sh
+    git stash save "Adding new README.md file."
+    ```
 ## List the Stash
 ```sh
 git stash list
+```
+## List the Stash with the State
+```sh
+git stash list --state
 ```
 ## Recover the Stash
 ```sh
@@ -256,3 +268,39 @@ git stash pop
 ```sh
 git stash drop
 ```
+## Drop a Specific Stash
+```sh
+git stash drop <stash-id>
+```
+* ### Example
+    ```sh
+    git stash drop stash@{1}
+    ```
+## Clear All the Stash
+```sh
+git stash clear
+```
+## Apply a Specific Stash
+```sh
+git stash apply <stash-id>
+```
+* ### Example
+    ```sh
+    git stash apply stash@{1}
+    ```
+## Stash Keeping Index
+```sh
+git stash save --keep-index
+```
+## Stash Including Untracked
+```sh
+git stash save --include-untracked
+```
+## Show the Stash
+```sh
+git show stash <stash-id>
+```
+* ### Example
+    ```sh
+    git show stash stash@{1}
+    ```
