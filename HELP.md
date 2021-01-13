@@ -319,8 +319,48 @@ git rebase -i HEAD~<number-of-commits>
 * ### Example
     ```sh
     git rebase -i HEAD~2
-    ```    
+    ```
 ## Continue Rebase After Edit
 ```sh
 git rebase --continue
 ```
+## Add Remote
+```sh
+git remote add <remote-name> <remote-url>
+```
+* ### Example
+    ```sh
+    git remote add origin git@github.com:jorgealfonsogarcia/udemy-git-github-course-exercises.git
+    ```
+## List Remotes
+```sh
+git remote -v
+```
+## Push
+```sh
+git push -u <remote-name> <branch-name>
+```
+* ### Example
+    ```sh
+    git push -u origin master
+    ```
+## Push All Tags
+```sh
+git push --tags
+```
+## Pull
+```sh
+git pull <remote-name> <branch-name>
+```
+* ### Example
+    ```sh
+    git pull origin master
+    ```
+## Clone
+```sh
+git clone <remote-url>
+```
+* ### Example
+    ```sh
+    git clone git@github.com:jorgealfonsogarcia/udemy-git-github-course-exercises.git
+    ```
