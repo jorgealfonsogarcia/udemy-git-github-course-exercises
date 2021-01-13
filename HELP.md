@@ -320,3 +320,7 @@ git rebase -i HEAD~<number-of-commits>
     ```sh
     git rebase -i HEAD~2
     ```    
+## Continue Rebase After Edit
+```sh
+git rebase --continue
+```
