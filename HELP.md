@@ -304,3 +304,11 @@ git show stash <stash-id>
     ```sh
     git show stash stash@{1}
     ```
+## Show the Stash
+```sh
+git rebase <branch-name>
+```
+* ### Example
+    ```sh
+    git rebase master
+    ```
