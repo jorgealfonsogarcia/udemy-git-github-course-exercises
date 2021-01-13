@@ -3,7 +3,7 @@
 * Superman
 * Batman
 * Aquaman
-* Mujer Maravilla
-* Linterna Verde
+* Wonder Woman
+* Green Lantern
 * Robin
-* Volcán Negro
+* Black Vulcan
