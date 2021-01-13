@@ -364,3 +364,11 @@ git clone <remote-url>
     ```sh
     git clone git@github.com:jorgealfonsogarcia/udemy-git-github-course-exercises.git
     ```
+## Fetch
+```sh
+git fetch <remote-name> <branch-name>
+```
+* ### Example
+    ```sh
+    git fetch origin master
+    ```
