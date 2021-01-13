@@ -6,3 +6,7 @@ This repository corresponds to a personal exercise and is not linked in any way 
 The `HELP.md` file contains a list of all the commands taught in the course.
 
 The `demo-01-initializr` folder contains a web page created with [Initializr](http://www.initializr.com).
+
+### Github
+
+Change made in Github.
