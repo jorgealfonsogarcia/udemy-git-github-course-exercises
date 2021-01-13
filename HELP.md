@@ -248,3 +248,7 @@ git stash
 ```sh
 git stash list
 ```
+## Recover the Stash
+```sh
+git stash pop
+```
