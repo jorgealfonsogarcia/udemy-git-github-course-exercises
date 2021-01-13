@@ -312,3 +312,11 @@ git rebase <branch-name>
     ```sh
     git rebase master
     ```
+## Rebase Interactive from HEAD
+```sh
+git rebase -i HEAD~<number-of-commits>
+```
+* ### Example
+    ```sh
+    git rebase -i HEAD~2
+    ```    
