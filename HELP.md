@@ -252,3 +252,7 @@ git stash list
 ```sh
 git stash pop
 ```
+## Drop the Stash
+```sh
+git stash drop
+```
