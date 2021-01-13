@@ -1,242 +1,246 @@
 # Git Commands
 ## Version
-```bash
+```sh
 git --version
 ```
 ## Help
-```bash
+```sh
 git help
 ```
 ## Configurate Global User Name and Email
-```bash
+```sh
 git config --global user.name "John Doe"
 git config --global user.email "john.doe@example.com"
 ```
 ## Edit All Global Configuration
-```bash
+```sh
 git config --global -e
 ```
 ## List All Global Configuration
-```bash
+```sh
 git config --global -l
 ```
 ## Init Repository
-```bash
+```sh
 git init
 ```
 ## Repository Status
-```bash
+```sh
 git status
 ```
 ## Simplify Repository Status
-```bash
+```sh
 git status -sb
 ```
 ## Add All Files
-```bash
+```sh
 git add .
 ```
 ## Add All Modified Files
-```bash
+```sh
 git add -A
 ```
 ## Add Files
-```bash
+```sh
 git add <file>
 ```
 ## Unstage Added Files
-```bash
+```sh
 git reset <file>
 ```
 ## Commit
-```bash
+```sh
 git commit -m "The commit message."
 ```
 ## Add All Modified Files and Commit
-```bash
+```sh
 git commit -am "The commit message."
 ```
 ## Amend Last Commit Message
-```bash
+```sh
 git commit --amend -m "The new commit message."
 ```
 ## Reverse All Changes
-```bash
+```sh
 git checkout -- .
 ```
 ## Reverse File Changes 
-```bash
+```sh
 git checkout -- <file>
 ```
 ## Log
-```bash
+```sh
 git log
 ```
 ## Log in One Line
-```bash
+```sh
 git log --oneline
 ```
 ## Log With All Detail
-```bash
+```sh
 git log --oneline --decorate --all --graph
 ```
 ## Create an Command Alias
-```bash
+```sh
 git config --global alias.alias-name "git-command option-1 option-2 option-n"
 ```
 * ### Examples
-    ```bash
+    ```sh
     git config --global alias.lg "log --oneline --decorate --all --graph"
     ```
-    ```bash
+    ```sh
     git config --global alias.sb "status -sb"
     ```
 ## Get the Difference Between the Current Files Unstaged and the Last Commit
-```bash
+```sh
 git diff
 ```
 ## Get the Difference Between the Staged Files and the Last Commit
-```bash
+```sh
 git diff --staged
 ```
 ## Reset Soft Last Commit
-```bash
+```sh
 git reset --soft HEAD^
 ```
 ## Reset to an Specific Commit (Don't Delete the Modified Files)
-```bash
+```sh
 git reset --mixed <COMMIT-HASH>
 ```
 * ### Example
-    ```bash
+    ```sh
     git reset --mixed 63c9c99
     ```
 ## Reset to an Specific Commit (Delete the Modified Files)
-```bash
+```sh
 git reset --hard <COMMIT-HASH>
 ```
 * ### Example
-    ```bash
+    ```sh
     git reset --hard 63c9c99
     ```
 ## Reference Log (Shows All Repository History)
-```bash
+```sh
 git reflog
 ```
 ## Change File Name
-```bash
+```sh
 git mv <old-filename> <new-filename>
 ```
 * ### Example
-    ```bash
+    ```sh
     git mv demo-04-heroes/destroy-world.txt demo-04-heroes/save-world.txt
     ```
 ## Delete File
-```bash
+```sh
 git rm <file>
 ```
 * ### Example
-    ```bash
+    ```sh
     git rm demo-04-heroes/save-world.txt
     ```
 ## Update Renamed (Or Deleted) Files When It's Applied Outside Git
-```bash
+```sh
 git add -u
 git add -A
 ```
 ## Create a New Branch
-```bash
+```sh
 git branch <new-branch-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git branch my-new-branch
     ```
 ## Change Branch
-```bash
+```sh
 git checkout <branch-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git checkout my-new-branch
     ```
 ## List Branches
-```bash
+```sh
 git branch
 ```
 ## Get the Difference Between Branches
-```bash
+```sh
 git diff <branch-1-name> <branch-2-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git diff my-new-branch master
     ```
 ## Merge a Branch into the Current Branch
-```bash
+```sh
 git merge <branch-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git merge my-new-branch
     ```
 ## Delete a Branch
-```bash
+```sh
 git branch -d <branch-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git branch -d my-new-branch
     ```
 ## Create and Change to a New Branch
-```bash
+```sh
 git checkout -b <new-branch-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git checkout -b my-new-branch
     ```
 ## Create a Tag to the Current Commit
-```bash
+```sh
 git tag <tag-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git tag v1.0.0
     ```
 ## List Tags
-```bash
+```sh
 git tag
 ```
 ## Delete a Tag
-```bash
+```sh
 git tag -d <tag-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git tag -d v1.0.0
     ```
 ## Create an Annotated Tag to the Current Commit
-```bash
+```sh
 git tag -a <tag-name> -m "Message"
 ```
 * ### Example
-    ```bash
+    ```sh
     git tag -a 1.0.0 -m "Version 1.0.0"
     ```
 ## Create an Annotated Tag to a Specific Commit
-```bash
+```sh
 git tag -a <tag-name> <COMMIT-HASH> -m "Message"
 ```
 * ### Example
-    ```bash
+    ```sh
     git tag -a 0.1.0 1989054 -m "Alpha Version."
     ```
 ## Show Tag Info
-```bash
+```sh
 git show <tag-name>
 ```
 * ### Example
-    ```bash
+    ```sh
     git show 0.1.0
     ```
+## Stash
+```sh
+git stash
+```
