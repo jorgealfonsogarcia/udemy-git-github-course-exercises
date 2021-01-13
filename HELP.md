@@ -244,3 +244,7 @@ git show <tag-name>
 ```sh
 git stash
 ```
+## List the Stash
+```sh
+git stash list
+```
